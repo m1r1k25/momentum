@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="title">Now playing</div>
+      <div class="cover"><img class="cover__img" src="assets/img/cover1.jpg" alt="cover"></div>
+      <div class="song">The pretender</div>
+      <audio class="audio" src="assets/audio/ThePretender.mp3"></audio>
+      <div class="progress__container">
+        <div class="progress"></div>
+      </div>
+      <div class="time-container">
+        <div class="currentTime"></div>
+        <div class="durationTime"></div>
+      </div>
+      <button class="sound"><img class="soundBtn" id="soundBtn" src="assets/img/sound.png" alt="sound"></button>            
+      <input class="slider" id="range" name="volume" min="0" max="100" value="100" type="range">
+      <div class="buttons">
+        <div class="btn prev"><img src="assets/svg/play-prev.svg" alt="btn"></div>
+        <div class="btn play"><img id="img__src" src="assets/svg/play.svg" alt="btn"></div>
+        <div class="btn next" id="next"><img src="assets/svg/play-next.svg" alt="btn"></div>      
+      </div>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value="Minsk">
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <select class="change-lang">
+    <option value="ru">RU</option>
+    <option value="en" selected>EN</option>
+  </select>
+</div>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div id="quotation"></div>
+      <div id="source"></div>
+    </div>
+    <div class="footer-second">
+      <div class="footer-second-item">© 2021</div>
+      <div class="rolling"><a class="footer__link" href="https://rs.school/js/"><img src="assets/img/rs_school_js.svg" alt="logo"></a></div>
+      <div class="footer-second-item"><a href="https://github.com/m1r1k25">m1r1k25</a></div>
+    </div>
+  </footer>
+  <script src="js/audioplayer.js"></script>
+  <script src="js/time.js"></script>
+  <script src="js/quote.js"></script>
+  <script src="js/weather.js"></script>
+  </body>
+</html>
